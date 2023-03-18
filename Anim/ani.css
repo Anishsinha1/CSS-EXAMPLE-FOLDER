@@ -1,0 +1,53 @@
+body{
+    background-image:repeating-radial-gradient(red 0% 2% , black 2% 4%);
+    background-size:50px 50px ;
+}
+
+
+@keyframes img-fluid {
+  0%{
+    background-image:repeating-linear-gradient(yellow, pink);
+    border:17px groove black;
+
+    
+  }  
+  25%{
+    background-image:repeating-linear-gradient(orange,yellow);
+    border:17px groove blue;
+
+
+  }
+  50%{
+    background-image:repeating-linear-gradient( black,yellow);
+    border:17px groove red;
+
+    
+  }
+  75%{
+    background-image:repeating-linear-gradient( brown,yellow);
+    border:17px groove lawngreen;
+}
+    
+  
+  100%{
+    background-image:repeating-linear-gradient(coral,orange,red,blue);
+    border:17px groove indigo;
+}}
+    
+  
+
+*{
+    box-sizing:border-box ;
+}
+.box1{
+    width:300px;
+    height:300px;
+    cursor: pointer;
+    animation-name:img-fluid;
+    animation-duration:15s ;
+    animation-direction:alternate-reverse;
+    animation-timing-function:linear ;
+    animation-delay:1ms;
+    animation-iteration-count:infinite ;
+    border:7px dotted whitesmoke;
+}
